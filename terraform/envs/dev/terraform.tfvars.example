@@ -1,0 +1,20 @@
+# Example terraform.tfvars file for development environment
+# Copy this to terraform.tfvars and fill in your actual values
+
+# General Configuration
+name_prefix = "tms"
+environment = "dev"
+aws_region  = "us-east-1"
+
+# Database Configuration (use simple password for dev)
+database_password = "devpassword123!"
+
+# QuickBooks Configuration (use sandbox credentials)
+qbo_client_id     = "your-sandbox-quickbooks-client-id"
+qbo_client_secret = "your-sandbox-quickbooks-client-secret"
+
+# CORS Configuration (allow localhost for dev)
+cors_allowed_origins = ["http://localhost:3000", "https://localhost:3000"]
+
+# Docker Image Tag
+# image_tag = "dev-latest"

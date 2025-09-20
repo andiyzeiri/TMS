@@ -1,0 +1,26 @@
+# Example terraform.tfvars file for production environment
+# Copy this to terraform.tfvars and fill in your actual values
+
+# General Configuration
+name_prefix = "tms"
+environment = "prod"
+aws_region  = "us-east-1"
+
+# Database Configuration
+database_password = "your-secure-database-password"
+
+# QuickBooks Configuration
+qbo_client_id     = "your-quickbooks-client-id"
+qbo_client_secret = "your-quickbooks-client-secret"
+
+# Domain Configuration (optional)
+# web_domain_aliases = ["yourapp.com", "www.yourapp.com"]
+# api_domain_aliases = ["api.yourapp.com"]
+# web_acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/your-cert-id"
+# api_acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/your-api-cert-id"
+
+# CORS Configuration
+cors_allowed_origins = ["https://yourapp.com", "https://www.yourapp.com"]
+
+# Docker Image Tag
+# image_tag = "v1.0.0"
