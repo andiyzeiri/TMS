@@ -1,0 +1,3 @@
+[submodule "claude-trucking-tms"]
+	path = claude-trucking-tms
+	url = https://github.com/andiyzeiri/claude-trucking-tms.git
